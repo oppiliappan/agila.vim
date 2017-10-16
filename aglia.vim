@@ -15,22 +15,22 @@ if !has('gui_running')
 endif
 
 " GUI color definitions
-let s:gui00 = "1d1f21"
-let s:gui01 = "282a2e"
-let s:gui02 = "373b41"
-let s:gui03 = "969896"
-let s:gui04 = "b4b7b4"
-let s:gui05 = "c5c8c6"
-let s:gui06 = "e0e0e0"
-let s:gui07 = "ffffff"
-let s:gui08 = "cc6666"
-let s:gui09 = "de935f"
-let s:gui0A = "f0c674"
-let s:gui0B = "b5bd68"
-let s:gui0C = "8abeb7"
-let s:gui0D = "81a2be"
-let s:gui0E = "b294bb"
-let s:gui0F = "a3685a"
+let s:gui00 = "1a1e24"
+let s:gui01 = "252b33"
+let s:gui02 = "252a34"
+let s:gui03 = "3b4453"
+let s:gui04 = "505964"
+let s:gui05 = "cdd3df"
+let s:gui06 = "dae0ed"
+let s:gui07 = "cfcfcf"
+let s:gui08 = "ee6165"
+let s:gui09 = "fb924c"
+let s:gui0A = "fac751"
+let s:gui0B = "91b859"
+let s:gui0C = "5bb3b4"
+let s:gui0D = "6398cf"
+let s:gui0E = "c28aa3"
+let s:gui0F = "926b3e"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -61,22 +61,22 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#1d1f21"
-  let g:terminal_color_1 =  "#cc6666"
-  let g:terminal_color_2 =  "#b5bd68"
-  let g:terminal_color_3 =  "#f0c674"
-  let g:terminal_color_4 =  "#81a2be"
-  let g:terminal_color_5 =  "#b294bb"
-  let g:terminal_color_6 =  "#8abeb7"
-  let g:terminal_color_7 =  "#c5c8c6"
-  let g:terminal_color_8 =  "#969896"
-  let g:terminal_color_9 =  "#de935f"
-  let g:terminal_color_10 = "#282a2e"
-  let g:terminal_color_11 = "#373b41"
-  let g:terminal_color_12 = "#b4b7b4"
-  let g:terminal_color_13 = "#e0e0e0"
-  let g:terminal_color_14 = "#a3685a"
-  let g:terminal_color_15 = "#ffffff"
+  let g:terminal_color_0 =  "#1a1e24"
+  let g:terminal_color_1 =  "#252b33"
+  let g:terminal_color_2 =  "#252a34"
+  let g:terminal_color_3 =  "#3b4453"
+  let g:terminal_color_4 =  "#505964"
+  let g:terminal_color_5 =  "#cdd3df"
+  let g:terminal_color_6 =  "#dae0ed"
+  let g:terminal_color_7 =  "#cfcfcf"
+  let g:terminal_color_8 =  "#ee6165"
+  let g:terminal_color_9 =  "#fb924c"
+  let g:terminal_color_10 = "#fac751"
+  let g:terminal_color_11 = "#91b859"
+  let g:terminal_color_12 = "#5bb3b4"
+  let g:terminal_color_13 = "#6398cf"
+  let g:terminal_color_14 = "#c28aa3"
+  let g:terminal_color_15 = "#926b3e"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_7
   if &background == "light"
@@ -141,11 +141,11 @@ call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none", "")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
 call <sid>hi("Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05, "", "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm02, "", "", "")
-call <sid>hi("LineNr",        s:gui03, s:gui01, s:cterm03, s:cterm00, "", "")
-call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm00, "", "")
+call <sid>hi("LineNr",        s:gui03, s:gui00, s:cterm03, s:cterm00, "", "")
+call <sid>hi("SignColumn",    s:gui03, s:gui00, s:cterm03, s:cterm00, "", "")
 call <sid>hi("StatusLine",    s:gui04, s:gui02, s:cterm04, s:cterm02, "none", "")
-call <sid>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
-call <sid>hi("VertSplit",     s:gui02, s:gui02, s:cterm02, s:cterm02, "none", "")
+call <sid>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm04, s:cterm02, "none", "")
+call <sid>hi("VertSplit",     s:gui01, s:gui02, s:cterm00, s:cterm00, "none", "")
 call <sid>hi("ColorColumn",   "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorColumn",  "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorLine",    "", s:gui01, "", s:cterm01, "none", "")
@@ -153,9 +153,9 @@ call <sid>hi("CursorLineNr",  s:gui04, s:gui01, s:cterm04, s:cterm01, "", "")
 call <sid>hi("QuickFixLine",  "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("PMenu",         s:gui05, s:gui01, s:cterm05, s:cterm01, "none", "")
 call <sid>hi("PMenuSel",      s:gui01, s:gui05, s:cterm01, s:cterm05, "", "")
-call <sid>hi("TabLine",       s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
-call <sid>hi("TabLineFill",   s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
-call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none", "")
+call <sid>hi("TabLine",       s:gui03, s:gui01, s:cterm03, s:cterm01, "underline", "")
+call <sid>hi("TabLineFill",   s:gui03, s:gui01, s:cterm00, s:cterm01, "none", "")
+call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm05, s:cterm00, "underline", "")
 
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")
@@ -205,10 +205,10 @@ call <sid>hi("cssClassName",   s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("cssColor",       s:gui0C, "", s:cterm0C, "", "", "")
 
 " Diff highlighting
-call <sid>hi("DiffAdd",      s:gui0B, s:gui01,  s:cterm0B, s:cterm00, "", "")
-call <sid>hi("DiffChange",   s:gui03, s:gui01,  s:cterm03, s:cterm00, "", "")
-call <sid>hi("DiffDelete",   s:gui08, s:gui01,  s:cterm08, s:cterm01, "", "")
-call <sid>hi("DiffText",     s:gui0D, s:gui01,  s:cterm0D, s:cterm01, "", "")
+call <sid>hi("DiffAdd",      s:gui0B, s:gui00,  s:cterm0B, s:cterm00, "", "")
+call <sid>hi("DiffChange",   s:gui03, s:gui00,  s:cterm03, s:cterm00, "", "")
+call <sid>hi("DiffDelete",   s:gui08, s:gui00,  s:cterm08, s:cterm00, "", "")
+call <sid>hi("DiffText",     s:gui0D, s:gui00,  s:cterm0D, s:cterm00, "", "")
 call <sid>hi("DiffAdded",    s:gui0B, s:gui00,  s:cterm0B, s:cterm00, "", "")
 call <sid>hi("DiffFile",     s:gui08, s:gui00,  s:cterm08, s:cterm00, "", "")
 call <sid>hi("DiffNewFile",  s:gui0B, s:gui00,  s:cterm0B, s:cterm00, "", "")
@@ -233,9 +233,9 @@ call <sid>hi("gitcommitDiscardedFile",  s:gui08, "", s:cterm08, "", "bold", "")
 call <sid>hi("gitcommitSelectedFile",   s:gui0B, "", s:cterm0B, "", "bold", "")
 
 " GitGutter highlighting
-call <sid>hi("GitGutterAdd",     s:gui0B, s:gui01, s:cterm0B, s:cterm00, "", "")
-call <sid>hi("GitGutterChange",  s:gui0D, s:gui01, s:cterm0D, s:cterm00, "", "")
-call <sid>hi("GitGutterDelete",  s:gui08, s:gui01, s:cterm08, s:cterm00, "", "")
+call <sid>hi("GitGutterAdd",     s:gui0B, s:gui00, s:cterm0B, s:cterm00, "", "")
+call <sid>hi("GitGutterChange",  s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
+call <sid>hi("GitGutterDelete",  s:gui08, s:gui00, s:cterm08, s:cterm00, "", "")
 call <sid>hi("GitGutterChangeDelete",  s:gui0E, s:gui01, s:cterm0E, s:cterm00, "", "")
 
 " HTML highlighting
