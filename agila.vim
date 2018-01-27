@@ -148,8 +148,14 @@ call <sid>hi("QuickFixLine",  "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("PMenu",         s:gui05, s:gui01, s:cterm05, s:cterm01, "none", "")
 call <sid>hi("PMenuSel",      s:gui01, s:gui05, s:cterm01, s:cterm05, "", "")
 call <sid>hi("TabLine",       s:gui03, s:gui01, s:cterm05, s:cterm01, "none", "")
-call <sid>hi("TabLineFill",   s:gui03, s:gui01, s:cterm07, s:cterm01, "none", "")
+call <sid>hi("TabLineFill",   s:gui03, s:gui01, s:cterm07, s:cterm00, "none", "")
 call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm00, s:cterm0D, "none", "")
+
+" Statusline highlighting
+call <sid>hi("PrimaryBlock",   s:gui0B, s:gui01, s:cterm00, s:cterm0D, "none", "")
+call <sid>hi("SecondaryBlock", s:gui0B, s:gui01, s:cterm00, s:cterm0C, "none", "")
+call <sid>hi("TeritaryBlock",  s:gui0B, s:gui01, s:cterm05, s:cterm01, "none", "")
+call <sid>hi("Blanks",         s:gui0B, s:gui01, s:cterm07, s:cterm00, "none", "")
 
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")
@@ -285,10 +291,10 @@ call <sid>hi("phpComparison",      s:gui05, "", s:cterm05, "", "", "")
 call <sid>hi("phpParent",          s:gui05, "", s:cterm05, "", "", "")
 
 " Python highlighting
-call <sid>hi("pythonOperator",  s:gui0E, "", s:cterm0E, "", "", "")
-call <sid>hi("pythonRepeat",    s:gui0E, "", s:cterm0E, "", "", "")
-call <sid>hi("pythonInclude",   s:gui0E, "", s:cterm0E, "", "", "")
-call <sid>hi("pythonStatement", s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("pythonOperator",     s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("pythonRepeat",       s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("pythonInclude",      s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("pythonStatement",    s:gui0E, "", s:cterm0E, "", "", "")
 
 " Ruby highlighting
 call <sid>hi("rubyAttribute",               s:gui0D, "", s:cterm0D, "", "", "")
