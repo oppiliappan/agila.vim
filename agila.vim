@@ -153,9 +153,9 @@ call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm07, s:cterm00, "bold", ""
 
 " Statusline highlighting
 call <sid>hi("PrimaryBlock",   s:gui0B, s:gui01, s:cterm00, s:cterm0D, "", "")
-call <sid>hi("SecondaryBlock", s:gui0B, s:gui01, s:cterm07, s:cterm00, "", "")
-call <sid>hi("TeritaryBlock",  s:gui0B, s:gui01, s:cterm03, s:cterm00, "", "")
-call <sid>hi("Blanks",         s:gui0B, s:gui01, s:cterm03, s:cterm00, "", "")
+call <sid>hi("SecondaryBlock", s:gui0B, s:gui01, s:cterm05, s:cterm03, "", "")
+call <sid>hi("TeritaryBlock",  s:gui0B, s:gui01, s:cterm04, s:cterm00, "", "")
+call <sid>hi("Blanks",         s:gui0B, s:gui01, s:cterm05, s:cterm01, "", "")
 
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")
